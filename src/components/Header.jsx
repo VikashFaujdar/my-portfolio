@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { RiMenu3Line } from "react-icons/ri";
+import { IoCloseSharp } from "react-icons/io5";
 import gsap from 'gsap';
 
 
@@ -55,7 +56,9 @@ const Header = () => {
             </div>
             <div className="right flex items-center gap-6">
                <Link to={'/contact'} ><button className='cursor-pointer border-1 border-zinc-500 px-4 py-1'>Hire Me</button></Link>
-               <RiMenu3Line className='md:hidden size-8' onClick={handleToggle}/>
+               {
+                   showToggle == true ? <RiMenu3Line className='md:hidden size-8' onClick={handleToggle}/>: <IoCloseSharp className='md:hidden size-8' onClick={handleToggle} />
+               }
             </div>
         </div>
     </div>
