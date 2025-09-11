@@ -50,7 +50,7 @@ const Header = () => {
 
   return (
     <div className='bg-[#1E1E1E] header sticky -top-1 left-0 right-0 text-white flex items-center'>
-        <div className="container relative flex items-center justify-between px-4 lg:px-0 py-8">
+        <div className="container relative flex items-center justify-between px-3 lg:px-5 md:py-5 py-4">
             <div className="logo flex items-center justify-center">
                 <Link to={'/'} className='flex justify-center items-center gap-2'>
                 <img src={loader} alt="loader" className='h-8 rounded-full hidden md:block' />
@@ -76,14 +76,14 @@ const Header = () => {
                 <div className="underLine absolute w-full h-full border-b-2 border-white top-0 -left-18 group-hover:left-0 transition-all duration-300"></div>
                 </Link>
             </div>
-            <div className="h-full mobnav w-full bg-black fixed top-24 py-10 -left-[100%] md:hidden z-30 font-primary flex flex-col pl-4 gap-9 text-5xl">
+            <div className="h-full mobnav w-full bg-black fixed top-15 py-10 -left-[100%] md:hidden z-30 font-primary flex flex-col pl-4 gap-9 text-5xl">
                 <Link onClick={handleToggle} className='Links overflow-hidden' to={'/'}>Home</Link>
                 <Link onClick={handleToggle} className='Links overflow-hidden' to={'/about'}>About</Link>
                 <Link onClick={handleToggle} className='Links overflow-hidden' to={'/gallery'}>Gallery</Link>
                 <Link onClick={handleToggle} className='Links overflow-hidden' to={'/projects'}>Projects</Link>
                 <Link onClick={handleToggle} className='Links overflow-hidden' to={'/contact'}>Contact</Link>
             </div>
-            <div className="right flex items-center gap-6">
+            <div className="right flex items-center gap-3">
                <Link to={'/contact'} ><button className='relative cursor-pointer border-1 border-zinc-500 px-4 md:px-5 py-1 bg-white text-black hover:text-white text-md transition-all group duration-300 overflow-hidden z-20 rounded-sm hover:bg-transparent'>Hire Me
                 <div className="btn-animation absolute w-full h-full group-hover:bottom-0 bg-black -z-10 -bottom-8 transition-all duration-500 left-0"></div>
                 <div className="btn-animation-2 absolute w-full h-full group-hover:top-0 bg-black -z-10 -top-8 transition-all duration-500 left-0"></div>
