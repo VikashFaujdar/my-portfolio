@@ -4,23 +4,26 @@ import { RiMenu3Line } from "react-icons/ri";
 import { IoCloseSharp } from "react-icons/io5";
 import gsap from 'gsap';
 import { SplitText } from 'gsap/SplitText';
+import loader from '../assets/loader.gif'
+import { useGSAP } from '@gsap/react';
 
 
 const Header = () => {
 
-    const [showToggle, setshowToggle] = useState(true)
-    const SplittedLogo = SplitText.create(".logoName",{
-        type:"chars",
+    const [showToggle, setshowToggle] = useState(true);
+
+    useGSAP(()=>{
+        const SplittedLogo = SplitText.create(".logoName",{
+            type:"chars",
+        })
+        gsap.from(SplittedLogo.chars,{
+            y:20,
+            opacity:0,
+            duration:0.1,
+            stagger:0.2
+        })
     })
 
-    
-
-    gsap.from(SplittedLogo.chars,{
-        y:20,
-        opacity:0,
-        duration:0.1,
-        stagger:0.2
-    })
     
     
     const handleToggle = () => {
@@ -47,28 +50,29 @@ const Header = () => {
 
   return (
     <div className='bg-[#1E1E1E] header text-white flex items-center relative'>
-        <div className="container h-15 flex items-center justify-between px-4 lg:px-0 py-5">
-            <div className="logo">
-                <Link to={'/'}>
-                <h2 className='font-primary logoName font-medium text-xl hover:text-black relative hover:bg-transparent group overflow-hidden z-10 transition-all duration-500'>Vikash Kumar
-                    <div className="absolute h-full w-full bg-zinc-300 top-0 -left-34 -z-10 group-hover:left-0 transition-all duration-500"></div>
+        <div className="container h-15  flex items-center justify-between px-4 lg:px-0 py-8">
+            <div className="logo flex items-center justify-center">
+                <Link to={'/'} className='flex justify-center items-center gap-2'>
+                <img src={loader} alt="loader" className='h-8 rounded-full hidden md:block' />
+                <h2 className='font-primary logoName font-medium text-2xl hover:text-black relative hover:bg-transparent group overflow-hidden z-10 transition-all duration-500'>Vikash Kumar
+                    <div className="absolute h-full w-full bg-zinc-300 top-0 -left-40 -z-10 group-hover:left-0 transition-all duration-500"></div>
                 </h2>
                 </Link>
             </div>
-            <div className="middle hidden  md:flex items-center justify-center gap-15 font-secondary text-md">
-                <Link className=' relative transition-all duration-300 overflow-hidden group' to={'/'}>Home
+            <div className="middle desknav hidden  md:flex items-center justify-center lg:gap-15 md:gap-8 font-secondary text-md">
+                <Link className='relative transition-all duration-300 overflow-hidden group' to={'/'}>Home
                 <div className="underLine absolute w-full h-full border-b-2 border-white top-0 -left-18 group-hover:left-0 transition-all duration-300"></div>
                 </Link>
-                <Link className=' relative transition-all duration-300 overflow-hidden group' to={'/about'}>About
+                <Link className='relative transition-all duration-300 overflow-hidden group' to={'/about'}>About
                 <div className="underLine absolute w-full h-full border-b-2 border-white top-0 -left-18 group-hover:left-0 transition-all duration-300"></div>
                 </Link>
-                <Link className=' relative transition-all duration-300 overflow-hidden group' to={'/gallery'}>Gallery
+                <Link className='relative transition-all duration-300 overflow-hidden group' to={'/gallery'}>Gallery
                 <div className="underLine absolute w-full h-full border-b-2 border-white top-0 -left-18 group-hover:left-0 transition-all duration-300"></div>
                 </Link>
-                <Link className=' relative transition-all duration-300 overflow-hidden group' to={'/projects'}>Projects
+                <Link className='relative transition-all duration-300 overflow-hidden group' to={'/projects'}>Projects
                 <div className="underLine absolute w-full h-full border-b-2 border-white top-0 -left-18 group-hover:left-0 transition-all duration-300"></div>
                 </Link>
-                <Link className=' relative transition-all duration-300 overflow-hidden group' to={'/contact'}>Contact
+                <Link className='relative transition-all duration-300 overflow-hidden group' to={'/contact'}>Contact
                 <div className="underLine absolute w-full h-full border-b-2 border-white top-0 -left-18 group-hover:left-0 transition-all duration-300"></div>
                 </Link>
             </div>
