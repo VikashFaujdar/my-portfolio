@@ -21,7 +21,7 @@ const HeroSection = () => {
                         <button className='font-secondary hidden md:block relative overflow-hidden group'>My Projects
                             <div className="line border-b-2 border-white absolute w-full h-full top-0 left-22 group-hover:left-0 transition-all duration-300"></div>
                         </button>
-                        <button className='font-secondary relative md:hidden'>My Projects</button>
+                        <button className='font-secondary md:hidden'>My Projects</button>
                     </div>
                 </div>
                 <div className="Heroright w-full md:w-[45%] lg:w-[40%] h-full">
