@@ -8,8 +8,8 @@ import Header from './components/Header.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
     <Loader/>
+    <BrowserRouter>
     <Header/>
     <App />
     </BrowserRouter>

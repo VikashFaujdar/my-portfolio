@@ -1,0 +1,31 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+import homeImage from '../../assets/asset-01.png'
+
+const HeroSection = () => {
+    return (
+        <div className=' md:h-[calc(100vh-11vh)] flex items-center justify-center text-white py-10'>
+            <div className="container flex flex-col md:flex-row gap-10 items-center justify-between px-4 lg:px-0">
+                <div className="Heroleft w-full md:w-[45%] lg:w-[40%] h-full ">
+                    <h3 className='text-2xl font-secondary text-white font-medium'>Hello There</h3>
+                    <h1 className='text-4xl lg:text-5xl font-primary font-medium py-5 md:py-3'>I am Abdul Ahad a Product Designer & Developer Based in Pakistan</h1>
+                    <p className='text-xl text-start'>I craft clean, user-friendly digital experiences. From wireframes to code, I bring ideas to life.</p>
+                    <div className="btns flex items-center justify-start  mt-5">
+                        <Link to={'/contact'} ><button className='md:hidden cursor-pointer border-1 border-zinc-500 px-4 md:px-5 py-1 bg-white text-black hover:text-white text-md transition-all group duration-300 overflow-hidden rounded-sm hover:bg-transparent mr-10'>Hire Me
+                        </button></Link>
+                        <Link to={'/contact'} ><button className='hidden md:block relative cursor-pointer border-1 border-zinc-500 px-4 md:px-5 py-1 bg-white text-black hover:text-white text-md transition-all group duration-300 overflow-hidden z-20 rounded-sm hover:bg-transparent mr-10'>Hire Me
+                                        <div className="btn-animation absolute w-full h-full group-hover:bottom-0 bg-black -z-10 -bottom-8 transition-all duration-500 left-0"></div>
+                                        <div className="btn-animation-2 absolute w-full h-full group-hover:top-0 bg-black -z-10 -top-8 transition-all duration-500 left-0"></div>
+                                        </button></Link>
+                        <button>My Projects</button>
+                    </div>
+                </div>
+                <div className="Heroright w-full md:w-[45%] lg:w-[40%] h-full">
+                    <img src={homeImage} alt="homeImage" className='w-full h-full object-cover'/>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default HeroSection
