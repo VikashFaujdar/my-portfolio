@@ -53,7 +53,7 @@ const Header = () => {
         <div className="container relative flex items-center justify-between px-3 lg:px-5 md:py-5 py-4">
             <div className="logo flex items-center justify-center">
                 <Link to={'/'} className='flex justify-center items-center gap-2'>
-                <img src={loader} alt="loader" className='h-8 rounded-full hidden md:block' />
+                <img src={loader} alt="loader" className='h-10 rounded-full hidden md:block' />
                 <h2 className='font-primary logoName font-medium text-2xl hover:text-black relative hover:bg-transparent group overflow-hidden z-10 transition-all duration-500'>Vikash Kumar
                     <div className="absolute h-full w-full bg-zinc-300 top-0 -left-40 -z-10 group-hover:left-0 transition-all duration-500"></div>
                 </h2>
