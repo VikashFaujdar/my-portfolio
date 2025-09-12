@@ -62,10 +62,10 @@ const [currentWordIndex, setCurrentWordIndex] = useState(0);
   }, [controls]);
 
   return (
-    <div className="bg-white  lg:min-w-30 lg:max-w-50">
-      <div className=" font-primary text-black">
+    <div className="md:bg-zinc-600 min-w-20 hover:bg-white group lg:min-w-60 transition-all duration-300 md:rounded-full md:px-2">
+      <div className=" font-primary md:text-white group-hover:text-black transition-all duration-300 text-start lg:text-center">
         {currentText}
-        <motion.span animate={controls}>|</motion.span>
+        <motion.span animate={controls} className="relative -z-10 lg:z-10">|</motion.span>
       </div>
     </div>
   );
