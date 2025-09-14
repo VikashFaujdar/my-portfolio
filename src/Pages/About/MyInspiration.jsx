@@ -3,7 +3,7 @@ import Carousal from './Carousal'
 
 const MyInspiration = () => {
   return (
-    <div className='py-10'>
+    <div className='py-5 md:py-10'>
         <div className="container flex flex-col gap-10 px-3 lg:px-5 py-10">
             <h1 className='text-5xl md:text-[6vw] lg:text-5xl font-primary font-medium'>My inspirations and interests</h1>
             <div className="flex flex-col md:flex-row gap-10 justify-between">
