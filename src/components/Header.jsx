@@ -76,7 +76,7 @@ const Header = () => {
                 <div className="underLine absolute w-full h-full border-b-2 border-white top-0 -left-18 group-hover:left-0 transition-all duration-300"></div>
                 </Link>
             </div>
-            <div className="h-full mobnav w-full bg-black fixed top-15 py-10 -left-[100%] md:hidden z-30 font-primary flex flex-col pl-4 gap-9 text-5xl">
+            <div className="h-full mobnav w-full bg-black fixed top-15 py-10 -left-[100%] md:hidden z-50 font-primary flex flex-col pl-4 gap-9 text-5xl">
                 <Link onClick={handleToggle} className='Links overflow-hidden' to={'/'}>Home</Link>
                 <Link onClick={handleToggle} className='Links overflow-hidden' to={'/about'}>About</Link>
                 <Link onClick={handleToggle} className='Links overflow-hidden' to={'/gallery'}>Gallery</Link>

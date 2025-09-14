@@ -19,7 +19,6 @@ const Footer = () => {
                 opacity:0,
                 duration:0.8,
                 stagger:0.2,
-                repeat:-1
             })
         })
 
