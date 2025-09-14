@@ -7,19 +7,18 @@ const SelectedProjects = () => {
         <div className='text-white'>
             <div className="container py-5 px-3 lg:px-5">
                 <div className="top">
-                    <h1 className='font-primary text-[10vw] md:text-[5vw] lg:text-5xl'>Selected Projects</h1>
-                    <p className='text-2xl font-secondary py-3'>Explore my selected projects, showcasing my dedication
-                        to innovative and heartfelt design.</p>
+                    <h1 className='font-primary text-[10vw] md:text-[5vw] lg:text-6xl'>Selected Projects</h1>
+                    <p className='text-2xl font-secondary py-3 max-w-162'>Explore my selected projects, showcasing my dedication to innovative and heartfelt design.</p>
                 </div>
                 <div className="bottom grid col md:grid-cols-2 gap-10 md:gap-5 mt-10">
-                    <div className="projectCard flex flex-col gap-3">
-                        <img src={project1} alt="" />
-                        <h2 className='text-3xl md:text-[3vw] font-primary'>Redesign project: fitness tracker App Revamp</h2>
+                    <div className="projectCard flex flex-col gap-3 md:gap-5">
+                        <img src={project1} alt="project1" />
+                        <h2 className='text-3xl md:text-[3vw] lg:text-5xl font-primary'>Redesign project: fitness tracker App Revamp</h2>
                         <p className='text-xl font-secondary md:text-2xl '>Elevating the user experience of a renowned fitness tracker app through a strategic.</p>
                     </div>
-                    <div className="projectCard flex flex-col gap-3 ">
-                        <img src={project2} alt="" />
-                        <h2 className='text-3xl font-primary md:text-[3vw] '>Internship project: social dining app design</h2>
+                    <div className="projectCard flex flex-col gap-3 md:gap-5">
+                        <img src={project2} alt="project2" />
+                        <h2 className='text-3xl font-primary lg:text-5xl md:text-[3vw] '>Internship project: social dining app design</h2>
                         <p className='text-xl font-secondary md:text-2xl'>Designing a mobile app to connect food enthusiasts through shared dining experiences, from concept to prototype.</p>
                     </div>
                 </div>
