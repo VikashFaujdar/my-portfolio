@@ -1,10 +1,12 @@
 import React from 'react'
 import Hero from './Hero'
+import MyInspiration from './MyInspiration'
 
 const About = () => {
   return (
-    <div>
+    <div className='bg-[#F3F3F2]'>
       <Hero/>
+      <MyInspiration/>
     </div>
   )
 }
