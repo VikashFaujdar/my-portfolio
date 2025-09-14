@@ -6,9 +6,7 @@ const Loader = () => {
   const [ShowLoader, setShowLoader] = useState(false);
 
   window.addEventListener("load", ()=>{
-    console.log(ShowLoader);
     setShowLoader(!ShowLoader);
-    console.log(ShowLoader)
   })
 
   return (
