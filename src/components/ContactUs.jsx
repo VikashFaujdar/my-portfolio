@@ -12,8 +12,8 @@ const ContactUs = () => {
         <div className='container  text-white md:py-15 py-5 justify-between items-start flex flex-col md:flex-row h-full px-3 lg:px-5'>
             <div className="left flex flex-col justify-end gap-6">
                 <div className="top">
-                    <h2 className='text-2xl lg:text-3xl font-secondary font-medium'>Contact Us</h2>
-                    <h1 className='text-3xl lg:text-5xl font-primary py-3'>Have a Project in Mind?</h1>
+                    <h2 className='text-3xl lg:text-3xl font-secondary font-medium md:text-[3vw] '>Contact Us</h2>
+                    <h1 className='text-4xl lg:text-5xl font-primary py-3 md:text-[5vw]'>Have a Project in Mind?</h1>
                     <p className='text-2xl lg:text-3xl font-secondary'>Tell me about it. I'm available for freelance, part-time, or remote opportunities—let’s build something great together</p>
                 </div>
                 <div className="bottom icons flex items-center gap-5">
