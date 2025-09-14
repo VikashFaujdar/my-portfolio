@@ -7,7 +7,7 @@ import Me from '../../assets/me.jpg'
 const HeroSection = () => {
 
     return (
-        <div className='flex items-center justify-center text-white py-10 lg:py-30'>
+        <div className='flex items-center justify-center text-white pt-25 pb-10  lg:pt-45 lg:pb-30'>
             <div className="container  flex flex-col md:flex-row gap-10 items-center justify-between px-3 lg:px-5">
                 <div className="Heroleft w-full md:w-[45%] lg:w-[45%] h-full ">
                     <h3 className='text-2xl subtitle font-secondary text-white font-medium md:py-3 pb-5'>Hello There</h3>

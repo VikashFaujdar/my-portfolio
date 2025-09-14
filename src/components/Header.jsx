@@ -20,7 +20,7 @@ const Header = () => {
             y:20,
             opacity:0,
             duration:0.1,
-            stagger:0.2
+            stagger:0.2,
         })
     })
 
@@ -49,7 +49,7 @@ const Header = () => {
     }
 
   return (
-    <div className='bg-[#1E1E1E] header sticky -top-1 left-0 right-0 text-white flex items-center'>
+    <div className='bg-[#1E1E1E] header fixed top-0 left-0 right-0 text-white flex items-center'>
         <div className="container relative flex items-center justify-between px-3 lg:px-5 md:py-5 py-4">
             <div className="logo flex items-center justify-center">
                 <Link to={'/'} className='flex justify-center items-center gap-2'>

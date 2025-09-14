@@ -4,8 +4,8 @@ import project2 from '../../assets/project-2.png'
 
 const SelectedProjects = () => {
     return (
-        <div className='text-white'>
-            <div className="container py-5 px-3 lg:px-5">
+        <div className='text-white py-5'>
+            <div className="container px-3 lg:px-5">
                 <div className="top">
                     <h1 className='font-primary text-[10vw] md:text-[5vw] lg:text-6xl'>Selected Projects</h1>
                     <p className='text-2xl font-secondary py-3 max-w-162'>Explore my selected projects, showcasing my dedication to innovative and heartfelt design.</p>
