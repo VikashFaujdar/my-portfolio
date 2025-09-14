@@ -20,7 +20,7 @@ export default function AnimatedCursor() {
                 transform: `translate(${position.x}px, ${position.y}px)`,
             }}
         >
-            <img src={cursor} alt="cursor" className="size-20"/>
+            <img src={cursor} alt="cursor" className="size-16"/>
         </div>
     );
 }
