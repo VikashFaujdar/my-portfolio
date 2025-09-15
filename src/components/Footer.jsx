@@ -19,6 +19,7 @@ const Footer = () => {
                 opacity:0,
                 duration:0.8,
                 stagger:0.2,
+                repeat:-1
             })
         })
 
@@ -31,10 +32,10 @@ const Footer = () => {
                             <h1 className='text-4xl nameLogo font-primary font-medium'>Vikash Kumar</h1>
                         </div>
                         <div className="links flex justify-between items-center md:gap-10 mt-5 md:mt-0">
-                            <Link to={'/projects'} className='text-2xl md:text-[2vw] lg:text-2xl font-secondary font-medium'>Projects
+                            <Link to={'/projects'} className='text-2xl md:text-[2vw] lg:text-xl hover:text-blue-300 transition-all duration-300 font-secondary font-medium'>Projects
                             </Link>
-                            <Link to={'/resume'} className='text-2xl md:text-[2vw] lg:text-2xl font-secondary font-medium'>Resume</Link>
-                            <Link to={'/about'} className='text-2xl md:text-[2vw] lg:text-2xl font-secondary font-medium'>About</Link>
+                            <Link to={'/resume'} className='text-2xl md:text-[2vw] lg:text-xl hover:text-blue-300 transition-all duration-300 font-secondary font-medium'>Resume</Link>
+                            <Link to={'/about'} className='text-2xl md:text-[2vw] lg:text-xl hover:text-blue-300 transition-all duration-300 font-secondary font-medium' href='#Header'>About</Link>
                         </div>
                     </div>
                     <hr className='my-5 border-2 md:hidden' />
