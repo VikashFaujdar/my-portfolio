@@ -3,7 +3,7 @@ import ContactUs from '../../components/ContactUs'
 
 const Contact = () => {
   return (
-    <div>
+    <div className='py-20 md:py-40'>
       <ContactUs/>
     </div>
   )
