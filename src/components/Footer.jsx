@@ -10,18 +10,18 @@ import { useGSAP } from '@gsap/react';
 const Footer = () => {
 
 
-    useGSAP(()=>{
-            const SplittedLogo = SplitText.create(".nameLogo",{
-                type:"chars",
-            })
-            gsap.from(SplittedLogo.chars,{
-                y:20,
-                opacity:0,
-                duration:0.8,
-                stagger:0.2,
-                repeat:-1
-            })
+    useGSAP(() => {
+        const SplittedLogo = SplitText.create(".nameLogo", {
+            type: "chars",
         })
+        gsap.from(SplittedLogo.chars, {
+            y: 20,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.2,
+            repeat: -1
+        })
+    })
 
     return (
         <div className='text-white py-10'>
@@ -42,8 +42,12 @@ const Footer = () => {
                     <div className="right mt-3">
                         <div className="icons flex justify-evenly md:gap-8">
                             <FaInstagram className='size-9 hover:text-blue-300 transition-all duration-300 text-white' />
+                            <a href="https://wa.me/919027456383" target="_blank" rel="noopener noreferrer">
                             <FaWhatsapp className='size-9 hover:text-blue-300 transition-all duration-300 text-white' />
+                            </a>
+                            <a href="tel:+919027456383">
                             <IoCallSharp className='size-9 hover:text-blue-300 transition-all duration-300 text-white' />
+                            </a>
                         </div>
                     </div>
                 </div>
