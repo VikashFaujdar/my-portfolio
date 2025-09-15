@@ -20,10 +20,14 @@ const HeroSection = () => {
                             <div className="btn-animation absolute w-full h-full group-hover:bottom-0 bg-black -z-10 -bottom-10 transition-all duration-500 left-0"></div>
                             <div className="btn-animation-2 absolute w-full h-full group-hover:top-0 bg-black -z-10 -top-10 transition-all duration-500 left-0"></div>
                         </button></Link>
+                        <Link to={'projects'}>
                         <button className='font-secondary hidden md:block text-md  relative text-xl overflow-hidden group'>My Projects
                             <div className="line border-b-2 border-white absolute w-full h-full top-0 -left-30 group-hover:left-0 transition-all duration-300"></div>
                         </button>
+                        </Link>
+                        <Link to={'/projects'}>
                         <button className='font-secondary md:hidden text-xl border-b-2 pb-1'>My Projects</button>
+                        </Link>
                     </div>
                 </div>
                 <div className="Heroright w-full md:w-[45%] lg:w-[40%] h-full md:h-150 overflow-hidden">
