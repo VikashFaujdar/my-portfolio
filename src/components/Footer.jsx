@@ -41,7 +41,9 @@ const Footer = () => {
                     <hr className='my-5 border-2 md:hidden' />
                     <div className="right mt-3">
                         <div className="icons flex justify-evenly md:gap-8">
+                            <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=nven6ac" target="_blank" rel="noopener noreferrer">
                             <FaInstagram className='size-9 hover:text-blue-300 transition-all duration-300 text-white' />
+                            </a>
                             <a href="https://wa.me/919027456383" target="_blank" rel="noopener noreferrer">
                             <FaWhatsapp className='size-9 hover:text-blue-300 transition-all duration-300 text-white' />
                             </a>

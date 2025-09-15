@@ -17,9 +17,15 @@ const ContactUs = () => {
                     <p className='text-2xl lg:text-3xl font-secondary'>Tell me about it. I'm available for freelance, part-time, or remote opportunities—let’s build something great together</p>
                 </div>
                 <div className="bottom icons flex items-center gap-5">
-                    <FaInstagram className='size-9 hover:text-blue-300 transition-all duration-300 text-white' />
-                    <FaWhatsapp className='size-9 hover:text-blue-300 transition-all duration-300 text-white' />
-                    <IoCallSharp className='size-9 hover:text-blue-300 transition-all duration-300 text-white' />
+                    <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=nven6ac" target="_blank" rel="noopener noreferrer">
+                        <FaInstagram className='size-9 hover:text-blue-300 transition-all duration-300 text-white' />
+                    </a>
+                    <a href="https://wa.me/919027456383" target="_blank" rel="noopener noreferrer">
+                        <FaWhatsapp className='size-9 hover:text-blue-300 transition-all duration-300 text-white' />
+                    </a>
+                    <a href="tel:+919027456383">
+                        <IoCallSharp className='size-9 hover:text-blue-300 transition-all duration-300 text-white' />
+                    </a>
                 </div>
             </div>
             <div className="left w-full mt-10 md:mt-0">
