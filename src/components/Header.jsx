@@ -81,7 +81,7 @@ const Header = () => {
                     <Link onClick={handleToggle} className='Links overflow-hidden' to={'/contact'}>Contact</Link>
                 </div>
                 <div className="right flex items-center gap-3">
-                    <Link to={'/contact'} ><button className='relative font-secondary cursor-pointer border-1 border-zinc-500 px-4 md:px-5 py-1 bg-white text-black hover:text-white text-md transition-all group duration-300 overflow-hidden z-20 rounded-sm hover:bg-transparent'>Hire Me
+                    <Link to={'/contact'} ><button className='relative font-secondary cursor-pointer border-2 border-white px-4 md:px-5 py-1 bg-white text-black hover:text-white text-md transition-all group duration-300 overflow-hidden z-20 rounded-sm hover:bg-transparent'>Hire Me
                         <div className="btn-animation absolute w-full h-full group-hover:bottom-0 bg-black -z-10 -bottom-8 transition-all duration-500 left-0"></div>
                         <div className="btn-animation-2 absolute w-full h-full group-hover:top-0 bg-black -z-10 -top-8 transition-all duration-500 left-0"></div>
                     </button></Link>

@@ -4,7 +4,7 @@ import myfoto from '../../assets/myfoto.jpg'
 
 const Hero = () => {
     return (
-        <div className='min-h-screen flex items-center justify-between rounded-4xl text-black bg-white pt-30 md:pt-20 pb-20'>
+        <div className='min-h-screen flex items-center justify-between rounded-4xl text-black bg-white pt-30 md:pt-30 pb-20'>
             <div className="container flex flex-col gap-10 px-3 lg:px-5">
                 <h1 className='text-5xl md:text-[6vw] lg:text-5xl font-primary font-medium'>Who I am beyond Design</h1>
                 <div className="sections md:flex md:gap-8 lg:mt-5">
