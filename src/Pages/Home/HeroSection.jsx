@@ -1,14 +1,29 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import homeImage from '../../assets/asset-01.png'
 import TypeWriter from '../../components/TypeWriter.jsx'
 import Me from '../../assets/me.jpg'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
 const HeroSection = () => {
 
+    const HeroRef = useRef();
+
+    useGSAP(() => {
+        const HeroTl = gsap.timeline()
+
+        HeroTl.from(".Heroleft", {
+            x: -100,
+            opacity: 0,
+            duration: 0.5,
+            delay: 1
+        })
+    }, [HeroRef])
+
     return (
         <div className='flex items-center justify-center text-white pt-25 pb-10  lg:pt-45 lg:pb-30'>
-            <div className="container  flex flex-col md:flex-row gap-10 items-center justify-between px-3 lg:px-5">
+            <div ref={HeroRef} className="container  flex flex-col md:flex-row gap-10 items-center justify-between px-3 lg:px-5">
                 <div className="Heroleft w-full md:w-[45%] lg:w-[45%] h-full ">
                     <h3 className='text-2xl subtitle font-secondary text-white font-medium md:py-3 pb-5'>Hello There</h3>
                     <h1 className='text-[10vw] sm:text-4xl md:text-4xl lg:text-5xl font-primary font-medium md:py-3 leading-[1.2]'>I am Vikash Kumar a {<TypeWriter />} Developer Based in India</h1>
@@ -21,12 +36,12 @@ const HeroSection = () => {
                             <div className="btn-animation-2 absolute w-full h-full group-hover:top-0 bg-black -z-10 -top-10 transition-all duration-500 left-0"></div>
                         </button></Link>
                         <Link to={'projects'}>
-                        <button className='font-secondary hidden md:block text-md  relative text-xl overflow-hidden group'>My Projects
-                            <div className="line border-b-2 border-white absolute w-full h-full top-0 -left-30 group-hover:left-0 transition-all duration-300"></div>
-                        </button>
+                            <button className='font-secondary hidden md:block text-md  relative text-xl overflow-hidden group'>My Projects
+                                <div className="line border-b-2 border-white absolute w-full h-full top-0 -left-30 group-hover:left-0 transition-all duration-300"></div>
+                            </button>
                         </Link>
                         <Link to={'/projects'}>
-                        <button className='font-secondary md:hidden text-xl border-b-2 pb-1'>My Projects</button>
+                            <button className='font-secondary md:hidden text-xl border-b-2 pb-1'>My Projects</button>
                         </Link>
                     </div>
                 </div>
