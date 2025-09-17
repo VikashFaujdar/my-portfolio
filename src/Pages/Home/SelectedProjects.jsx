@@ -13,7 +13,7 @@ const SelectedProjects = () => {
             scrollTrigger:{
                 trigger:SelectedRef.current,
                 start:"top 60%",
-                end:"bottom 100%",
+                end:"bottom 80%",
                 scrub:true,
             }
         });
