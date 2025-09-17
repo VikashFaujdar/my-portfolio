@@ -12,7 +12,7 @@ const SelectedProjects = () => {
         const SelectedTl = gsap.timeline({
             scrollTrigger:{
                 trigger:SelectedRef.current,
-                start:"top 65%",
+                start:"top 60%",
                 end:"bottom 100%",
                 scrub:true,
             }
