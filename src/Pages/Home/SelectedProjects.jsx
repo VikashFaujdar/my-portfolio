@@ -31,8 +31,7 @@ const SelectedProjects = () => {
         SelectedTl.from(".bottom .projectCard",{
             y:100,
             opacity:0,
-            stagger:0.5,
-            duration:1
+            stagger:1
         })
     })
 
