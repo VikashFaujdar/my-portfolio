@@ -1,10 +1,43 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import project1 from '../../assets/project-1.png'
 import project2 from '../../assets/project-2.png'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
 const SelectedProjects = () => {
+
+    const SelectedRef = useRef()
+
+    useGSAP(()=>{
+        const SelectedTl = gsap.timeline({
+            scrollTrigger:{
+                trigger:SelectedRef.current,
+                start:"top 90%",
+                end:"bottom 90%",
+                scrub:true,
+            }
+        });
+
+        SelectedTl.from(".top h1", {
+            y:50,
+            opacity:0,
+        })
+
+        SelectedTl.from(".top p", {
+            y:50,
+            opacity:0
+        })
+
+        SelectedTl.from(".bottom .projectCard",{
+            y:100,
+            opacity:0,
+            stagger:0.5,
+            duration:1
+        })
+    })
+
     return (
-        <div className='text-white py-5'>
+        <div ref={SelectedRef} className='text-white py-5'>
             <div className="container px-3 lg:px-5">
                 <div className="top">
                     <h1 className='font-primary text-[10vw] md:text-[5vw] lg:text-6xl'>Selected Projects</h1>
