@@ -12,7 +12,7 @@ const SelectedProjects = () => {
         const SelectedTl = gsap.timeline({
             scrollTrigger:{
                 trigger:SelectedRef.current,
-                start:"top 50%",
+                start:"top 65%",
                 end:"bottom 100%",
                 scrub:true,
             }
@@ -28,10 +28,14 @@ const SelectedProjects = () => {
             opacity:0
         })
 
-        SelectedTl.from(".bottom .projectCard",{
+        SelectedTl.from(".bottom .projectCard1",{
             y:100,
             opacity:0,
-            stagger:1
+        })
+
+        SelectedTl.from(".bottom .projectCard2",{
+            y:100,
+            opacity:0,
         })
     })
 
@@ -43,12 +47,12 @@ const SelectedProjects = () => {
                     <p className='text-2xl font-secondary py-3 max-w-162'>Explore my selected projects, showcasing my dedication to innovative and heartfelt design.</p>
                 </div>
                 <div className="bottom grid col md:grid-cols-2 gap-10 md:gap-5 mt-10">
-                    <div className="projectCard flex flex-col gap-3 md:gap-5">
+                    <div className="projectCard1 flex flex-col gap-3 md:gap-5">
                         <img src={project1} alt="project1" />
                         <h2 className='text-3xl md:text-[3vw] lg:text-5xl font-primary'>Redesign project: fitness tracker App Revamp</h2>
                         <p className='text-xl font-secondary md:text-2xl '>Elevating the user experience of a renowned fitness tracker app through a strategic.</p>
                     </div>
-                    <div className="projectCard flex flex-col gap-3 md:gap-5">
+                    <div className="projectCard2 flex flex-col gap-3 md:gap-5">
                         <img src={project2} alt="project2" />
                         <h2 className='text-3xl font-primary lg:text-5xl md:text-[3vw] '>Internship project: social dining app design</h2>
                         <p className='text-xl font-secondary md:text-2xl'>Designing a mobile app to connect food enthusiasts through shared dining experiences, from concept to prototype.</p>
