@@ -17,7 +17,7 @@ const HeroSection = () => {
             x: -100,
             opacity: 0,
             duration: 0.5,
-            delay: 1
+            delay: 2
         })
 
         HeroTl.from(".Heroright", {
