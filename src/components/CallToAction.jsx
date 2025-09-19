@@ -1,10 +1,48 @@
-import React from 'react';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { SplitText } from 'gsap/SplitText';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 const CallToAction = () => {
+
+    const CTARef = useRef();
+    
+    useGSAP(()=>{
+        
+        const CtaTitle = SplitText.create(".cta h1", {
+            type:"words"
+        })
+
+        const CtaSubTitle = SplitText.create(".cta p", {
+            type:"words"
+        })
+
+        const ctaTl = gsap.timeline({
+            scrollTrigger:{
+                trigger:CTARef.current,
+            }
+        })
+
+        ctaTl.from(CtaTitle.words,{
+            y:50,
+            opacity:0,
+            stagger:0.3,
+            duration:0.5
+        })
+
+        ctaTl.from(CtaSubTitle.words,{
+            y:50,
+            opacity:0,
+            stagger:0.3,
+            duration:0.5
+        })
+    })
+
+
     return (
-        <div className="text-white bg-zinc-600 w-full py-20 my-10">
-            <div className="container px-3 lg:px-5">
+        <div ref={CTARef} className="text-white bg-zinc-600 w-full py-20 my-10">
+            <div className="container cta px-3 lg:px-5">
                 <h1 className='text-4xl md:text-[5vw] lg:text-6xl font-primary font-medium'>Interested in connecting?</h1>
                 <p className='text-2xl  py-5 font-secondary'>Let’s talk projects, collaborations, or anything design!</p>
                 <Link to={'/contact'} ><button className='md:hidden font-secondary cursor-pointer border-1 border-zinc-500 px-4 md:px-5 py-1 bg-white text-black hover:text-white text-xl md:text-xl transition-all group duration-300 overflow-hidden rounded-sm hover:bg-transparent mr-10'>Book a call
