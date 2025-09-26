@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import homeImage from '../../assets/asset-01.png'
 import TypeWriter from '../../components/TypeWriter.jsx'
-import Me from '../../assets/asset-01.png'
+import Me from '../../assets/me.jpg'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
