@@ -8,7 +8,7 @@ import CallToAction from '../../components/CallToAction'
 const Home = () => {
   return (
     <div className='S'>
-      <HeroSection/>
+      {/* <HeroSection/> */}
       <SelectedProjects/>
       <GraduationProject/>
       <ContactUs/>
