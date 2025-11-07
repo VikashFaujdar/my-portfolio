@@ -8,7 +8,7 @@ const Hero = () => {
     const Projects = [
         {
             Image: card1,
-            Title: "Redesign project: fitness tracker App Revamp",
+            Title: "Creating Cynthia Ugwu Portfolio clone",
             subTitle: "Elevating the user experience of a renowned fitness tracker app through a strategic."
         },
         {
@@ -35,8 +35,8 @@ const Hero = () => {
                     {
                         Projects.map((elem) => {
                             return (
-                                <div className="card flex bg-transparent flex-col overflow-hidden rounded-md">
-                                    <img src={elem.Image} alt="card Image" className='rounded-xl h-100 object-cover object-center' />
+                                <div className="card group flex bg-transparent flex-col overflow-hidden rounded-md">
+                                    <img src={elem.Image} alt="card Image" className='rounded-xl h-100 group-hover:scale-105 transition-all duration-300 object-cover object-center' />
                                     <div className="dts flex flex-col gap-2 py-3">
                                         <h1 className='text-2xl sm:text-[5vw] md:text-[4vw] lg:text-4xl font-secondary font-medium'>{elem.Title}</h1>
                                         <h3 className='text-xl lg:text-2xl font-secondary font-normal my-3'>{elem.subTitle}</h3>

@@ -7,6 +7,7 @@ import Loader from './components/Loader.jsx'
 import Header from './components/Header.jsx'
 import Cursor from './components/Cursor.jsx'
 import Footer from './components/Footer.jsx'
+import Testing from './components/Testing.jsx'
 import BatteryIndicator from './components/BatteryIndicator.jsx'
 
 createRoot(document.getElementById('root')).render(
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')).render(
     <Cursor/>
     <BrowserRouter>
     <Header/>
+    <Testing/>
     <App />
     <Footer/>
     </BrowserRouter>

@@ -50,7 +50,7 @@ const Header = () => {
     }
 
     return (
-        <div id='Header' className='bg-[#1E1E1E] header fixed top-0 left-0 right-0 text-white flex items-center z-30'>
+        <div id='HeaderTop' className='bg-[#1E1E1E] header fixed top-0 left-0 right-0 text-white flex items-center z-30'>
             <div className="container relative flex items-center justify-between px-3 lg:px-5 md:py-5 py-4">
                 <div className="logo flex items-center justify-center">
                     <Link to={'/'} className='flex justify-center items-center gap-2'>
