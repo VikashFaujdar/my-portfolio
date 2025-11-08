@@ -13,9 +13,9 @@ html,body{
     background-color: black;
 }
 
-body::-webkit-scrollbar{
+/* body::-webkit-scrollbar{
     display: none;
-}
+} */
 
 .container{
     max-width: 1260px;
