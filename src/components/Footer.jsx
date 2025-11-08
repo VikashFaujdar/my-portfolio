@@ -17,14 +17,16 @@ const Footer = () => {
         gsap.from(SplittedLogo.chars, {
             y: 20,
             opacity: 0,
-            duration: 0.8,
+            duration: 0.3,
             stagger: 0.2,
-            repeat: -1
+            scrollTrigger:{
+                trigger:'.Footer',
+            }
         })
     })
 
     return (
-        <div className='text-white py-10'>
+        <div className='text-white py-10 Footer'>
             <div className="container px-3 lg:px-5">
                 <div className="footerTop md:flex justify-between items-center gap-10">
                     <div className="left w-full md:flex items-center justify-start gap-30">

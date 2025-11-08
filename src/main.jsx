@@ -12,13 +12,13 @@ import BatteryIndicator from './components/BatteryIndicator.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Loader/>
-    <Cursor/>
+    <Loader />
+    <Cursor />
     <BrowserRouter>
-    <Header/>
-    <Testing/>
-    <App />
-    <Footer/>
+      <Header />
+      <Testing />
+      <App />
+      <Footer />
     </BrowserRouter>
   </StrictMode>,
 )

@@ -7,7 +7,6 @@ const BatteryIndicator = () => {
 
   function updateBatteryStatus(battery) {
     const batteryLevel = (battery.level) * 100;
-    console.log(batteryLevel);
     setbatterlevel(batteryLevel)
   }
 
