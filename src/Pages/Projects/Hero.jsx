@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import grade from '../../assets/gradeProject.png'
 import card1 from '../../assets/card1.png';
 import card2 from '../../assets/card2.png';
+import gsap from 'gsap';
 
 const Hero = () => {
+
+    const [show, setShow] = useState(false)
 
     const Projects = [
         {
             Image: card1,
             Title: "Creating Cynthia Ugwu Portfolio clone",
-            subTitle: "Elevating the user experience of a renowned fitness tracker app through a strategic."
+            subTitle: "Elevating the user experience of a renowned fitness tracker app through a strategic.",
+            link:`https://cynthiaugwucreatedbyvikashkumar.netlify.app/`
         },
         {
             Image: card2,
@@ -36,7 +40,12 @@ const Hero = () => {
                         Projects.map((elem) => {
                             return (
                                 <div className="card group flex bg-transparent flex-col overflow-hidden rounded-md">
+                                    <a href={elem.link} target="_blank" rel="noopener noreferrer" className='relative group overflow-hidden'>
+                                        <div className="circle h-20 w-20 hidden rounded-full text-black text-xl top-[30%] left-[30%] bg-white absolute translate-x-1/2 translate-y-1/2 z-30 group-hover:flex items-center justify-center font-primary">
+                                            <h1>open</h1>
+                                        </div>
                                     <img src={elem.Image} alt="card Image" className='rounded-xl h-100 group-hover:scale-105 transition-all duration-300 object-cover object-center' />
+                                    </a>
                                     <div className="dts flex flex-col gap-2 py-3">
                                         <h1 className='text-2xl sm:text-[5vw] md:text-[4vw] lg:text-4xl font-secondary font-medium'>{elem.Title}</h1>
                                         <h3 className='text-xl lg:text-2xl font-secondary font-normal my-3'>{elem.subTitle}</h3>
