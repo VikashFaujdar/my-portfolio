@@ -17,13 +17,15 @@ const Hero = () => {
         },
         {
             Image: card2,
-            Title: "Internship project: social dining app design",
-            subTitle: "Designing a mobile app to connect food enthusiasts through shared dining experiences, from concept to prototype."
+            Title: "Internship project: Inme Summer camps",
+            subTitle: "Creating a website for a tour and traveling company or organization.",
+            link:  `https://inme.in/`
         },
         {
             Image: grade,
-            Title: "Redesign project: fitness tracker App Revamp",
-            subTitle: "Revolutionizing the educational ecosystem with a mobile app designed to enhance interactive learning and peer collaboration."
+            Title: "Redesign project: Lakshya Computer Coaching",
+            subTitle: "Revolutionizing the educational website designed to enhance computer knowledge interactive learning and peer collaboration.",
+            link:`https://computer-classes-vikash-fauzdar.vercel.app/`
         }
     ]
 
@@ -37,11 +39,11 @@ const Hero = () => {
                 <div className="grid grid-col md:grid-cols-2 gap-5 my-5">
 
                     {
-                        Projects.map((elem) => {
+                        Projects.map((elem, idx) => {
                             return (
-                                <div className="card group flex bg-transparent flex-col overflow-hidden rounded-md">
+                                <div key={idx} className="card group flex bg-transparent flex-col overflow-hidden rounded-md">
                                     <a href={elem.link} target="_blank" rel="noopener noreferrer" className='relative group overflow-hidden'>
-                                        <div className="circle h-20 w-20 hidden rounded-full text-black text-xl top-[30%] left-[30%] bg-white absolute translate-x-1/2 translate-y-1/2 z-30 group-hover:flex items-center justify-center font-primary">
+                                        <div className="circle h-20 w-20 hidden rounded-full text-black text-xl top-[30%] left-[30%] bg-white absolute translate-x-1/2 translate-y-1/2 z-30 group-hover:flex items-center justify-center font-primary hover:bg-black hover:text-white transition-all duration-300">
                                             <h1>open</h1>
                                         </div>
                                     <img src={elem.Image} alt="card Image" className='rounded-xl h-100 group-hover:scale-105 transition-all duration-300 object-cover object-center' />
