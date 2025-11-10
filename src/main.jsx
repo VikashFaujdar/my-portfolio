@@ -7,7 +7,6 @@ import Loader from './components/Loader.jsx'
 import Header from './components/Header.jsx'
 import Cursor from './components/Cursor.jsx'
 import Footer from './components/Footer.jsx'
-import BatteryIndicator from './components/BatteryIndicator.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
