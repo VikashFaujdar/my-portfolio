@@ -6,6 +6,7 @@ import { IoCallSharp } from "react-icons/io5";
 import gsap from 'gsap';
 import { SplitText } from 'gsap/SplitText';
 import { useGSAP } from '@gsap/react';
+import resume from './../assets/Resume.pdf'
 
 const Footer = () => {
 
@@ -36,7 +37,7 @@ const Footer = () => {
                         <div className="links flex justify-between items-center md:gap-10 mt-5 md:mt-0">
                             <Link to={'/projects'} className='text-2xl md:text-[2vw] lg:text-xl hover:text-blue-300 transition-all duration-300 font-secondary font-medium'>Projects
                             </Link>
-                            <Link to={'/resume'} className='text-2xl md:text-[2vw] lg:text-xl hover:text-blue-300 transition-all duration-300 font-secondary font-medium'>Resume</Link>
+                            <a href={resume} className='text-2xl md:text-[2vw] lg:text-xl hover:text-blue-300 transition-all duration-300 font-secondary font-medium' download>Resume</a>
                             <Link to={'/about'} className='text-2xl md:text-[2vw] lg:text-xl hover:text-blue-300 transition-all duration-300 font-secondary font-medium' href='#Header'>About</Link>
                         </div>
                     </div>
