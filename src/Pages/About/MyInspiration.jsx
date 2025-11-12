@@ -1,5 +1,6 @@
 import React from 'react'
 import Carousal from './Carousal'
+import ImageSection from '../../components/ImageSection'
 
 const MyInspiration = () => {
     return (
@@ -11,7 +12,8 @@ const MyInspiration = () => {
                     <h2 className='text-xl lg:text-2xl font-secondary'>I'm an avid photographer, capturing life's unplanned moments, and a sci-fi enthusiast, always intrigued by the blend of technology and human imagination.</h2>
                 </div>
                 <div className="slider">
-                    <Carousal />
+                    {/* <Carousal /> */}
+                    <ImageSection/>
                 </div>
                 <h1 className='text-5xl font-primary font-medium'>Looking ahead</h1>
                 <div className="flex flex-col md:flex-row gap-5 justify-between items-start">
