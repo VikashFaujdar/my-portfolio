@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-import grade from '../../assets/gradeProject.png'
-import card1 from '../../assets/card1.png';
-import card2 from '../../assets/card2.png';
+import card1 from '../../assets/cynthia.png';
+import card2 from '../../assets/inme.png';
+import card3 from '../../assets/miracles.png';
+import card4 from '../../assets/lakshya.png';
+import card5 from '../../assets/sundown.png';
+import card6 from '../../assets/usability.png';
 import gsap from 'gsap';
 
 const Hero = () => {
@@ -22,25 +25,25 @@ const Hero = () => {
             link: `https://inme.in/`
         },
         {
-            Image: grade,
+            Image: card3,
             Title: "Redesign project: Miracles Health Care",
             subTitle: "Creating the front-end for the miracles health care hospital at dixinfotech sevices llp.",
             link: `https://www.miracleshealth.com/`
         },
         {
-            Image: grade,
+            Image: card4,
             Title: "Redesign project: Lakshya Computer Coaching",
             subTitle: "Revolutionizing the educational website designed to enhance computer knowledge interactive learning and peer collaboration.",
             link: `https://computer-classes-vikash-fauzdar.vercel.app/`
         },
         {
-            Image: grade,
+            Image: card5,
             Title: "Redesign project: Sundown Studio",
             subTitle: "Creating the clone of sundown studio and increase my knowledge how to do responsive or many more things related to the css.",
             link: `https://sundownstudio-by-vikashkumar.netlify.app/`
         },
         {
-            Image: grade,
+            Image: card6 ,
             Title: "Redesign project: Usability Hub",
             subTitle: "Creating the clone of Usability hub and increase my knowledge how to do responsive or many more things related to the css.",
             link: `https://usability-hub-by-vikash-kumar.vercel.app/`
