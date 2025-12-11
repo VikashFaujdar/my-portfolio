@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
-import project1 from '../../assets/project-1.png'
-import project2 from '../../assets/project-2.png'
+import project1 from '../../assets/lakshya.png'
+import project2 from '../../assets/inme.png'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
@@ -50,13 +50,13 @@ const SelectedProjects = () => {
                 <div className="bottom grid col md:grid-cols-2 gap-10 md:gap-5 mt-10">
                     <div className="projectCard1 flex flex-col gap-3 md:gap-5">
                         <img src={project1} alt="project1" />
-                        <h2 className='text-3xl md:text-[3vw] lg:text-5xl font-primary'>Redesign project: fitness tracker App Revamp</h2>
-                        <p className='text-xl font-secondary md:text-2xl '>Elevating the user experience of a renowned fitness tracker app through a strategic.</p>
+                        <h2 className='text-3xl md:text-[3vw] lg:text-5xl font-primary'>Redesign project: Lakshya Computer Coaching </h2>
+                        <p className='text-xl font-secondary md:text-2xl '>Elevating the user experience of a Computer coaching center based in Aligarh.</p>
                     </div>
                     <div className="projectCard2 flex flex-col gap-3 md:gap-5">
                         <img src={project2} alt="project2" />
-                        <h2 className='text-3xl font-primary lg:text-5xl md:text-[3vw] '>Internship project: social dining app design</h2>
-                        <p className='text-xl font-secondary md:text-2xl'>Designing a mobile app to connect food enthusiasts through shared dining experiences, from concept to prototype.</p>
+                        <h2 className='text-3xl font-primary lg:text-5xl md:text-[3vw] '>Internship project: Inme Summer Camp</h2>
+                        <p className='text-xl font-secondary md:text-2xl'>Designing a website or a web application of a company which provide the camping or the touring services for the college or schools.</p>
                     </div>
                 </div>
             </div>
