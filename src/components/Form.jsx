@@ -1,46 +1,67 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 const Form = () => {
 
     
 
-    const [fullname, setFullname] = useState("")
-    const [contact, setContact] = useState("")
-    const [email, setEmail] = useState("")
-    const [project, setProject] = useState("")
-    const [message, setMessage] = useState("")
+    const [name, setName] = useState('')
+    // const [contact, setContact] = useState("")
+    const [email, setEmail] = useState('')
+    // const [project, setProject] = useState("")
+    const [message, setMessage] = useState('')
 
     const submitHandler = (e) => {
         e.preventDefault();
+
+        const serviceId = 'service_kzqps5p';
+        const templateId = 'template_ab5e0ao';
+        const publicKey = 'sJbxcnCbWRs7V4dt1';
+
+        const templateParams= {
+            from_name: name,
+            from_email: email,
+            to_name: 'Vikash Kumar',
+            message: message,
+        };
+
+        emailjs.send(serviceId,templateId,templateParams,publicKey).then((Response)=>{
+            console.log('email sent successfully', Response);
+        }).catch((error)=>{
+            console.log('error sending email', error)
+        })
+
         const userDetails = {
-            "Name": fullname,
-            "contact": contact,
+            "Name": name,
+            // "contact": contact,
             "email": email,
-            "project Type": project,
+            // "project Type": project,
             "message": message
         }
 
         console.log(userDetails)
 
-        setFullname("");
-        setContact("");
-        setEmail("");
-        setMessage("");
-        setProject("");
+        setName('');
+        // setContact("");
+        setEmail('');
+        setMessage('');
+        // setProject("");
+
     }
 
     return (
         <div className='border-1 border-white w-full h-full lg:p-8 p-5 rounded-3xl'>
-            <form className='w-full flex flex-col items-center gap-8 py-5'>
+            <form onSubmit={submitHandler} className='w-full flex flex-col items-center gap-8 py-5'>
                 <div className="dts flex flex-col md:flex-row w-full md:justify-between gap-4">
                     <div className="name flex flex-col w-full">
                         <label htmlFor="full name " className='text-xl mb-2 font-secondary'>Full Name</label>
                         <input
-                            onChange={(e) => { setFullname(e.target.value) }}
-                            value={fullname}
+                            onChange={(e) => { setName(e.target.value) }}
+                            value={name}
                             type="text" placeholder='Enter your full name' className='w-full px-2 md:py-2 py-3  rounded-sm bg-white text-black font-secondary outline-none text-md font-medium' />
                     </div>
-                    <div className="contact flex flex-col w-full">
+                    {/* <div className="contact flex flex-col w-full">
                         <label htmlFor="contact" className='text-xl mb-2 font-secondary'>
                             Contact
                         </label>
@@ -48,7 +69,7 @@ const Form = () => {
                             value={contact}
                             onChange={(e) => { setContact(e.target.value) }}
                             type="number" placeholder='Enter your contact no.' className='w-full px-2 md:py-2 py-3  rounded-sm bg-white text-black font-secondary outline-none text-md font-medium' />
-                    </div>
+                    </div> */}
                 </div>
                 <div className="dts flex flex-col md:flex-row w-full md:justify-between gap-4">
                     <div className="email flex flex-col w-full">
@@ -60,7 +81,7 @@ const Form = () => {
                             onChange={(e) => { setEmail(e.target.value) }}
                             type="email" placeholder='Enter your email' className='w-full px-2 md:py-2 py-3  rounded-sm bg-white text-black font-secondary outline-none text-md font-medium' />
                     </div>
-                    <div className="project flex flex-col w-full">
+                    {/* <div className="project flex flex-col w-full">
                         <label htmlFor="Project-Type" className='text-xl mb-2 font-secondary'>
                             Project Type
                         </label>
@@ -68,7 +89,7 @@ const Form = () => {
                             value={project}
                             onChange={(e) => { setProject(e.target.value) }}
                             type="text" placeholder='Enter your project type' className='w-full px-2 md:py-2 py-3  rounded-sm bg-white text-black font-secondary outline-none text-md font-medium' />
-                    </div>
+                    </div> */}
                 </div>
                 <div className="message w-full">
                     <label htmlFor="message" className='text-xl font-secondary'>Message</label>

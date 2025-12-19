@@ -5,33 +5,29 @@ import { IoCallSharp } from "react-icons/io5";
 import Form from './Form';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import { SplitText } from 'gsap/SplitText';
-
-
-
 
 const ContactUs = () => {
 
     const ContactRef = useRef();
-    
-    useGSAP(()=>{
-       
+
+    useGSAP(() => {
+
         const contactTl = gsap.timeline({
-            scrollTrigger:{
-                trigger:ContactRef.current,
+            scrollTrigger: {
+                trigger: ContactRef.current,
             }
         });
 
         contactTl.from(".contact .left", {
-            x:-100,
-            opacity:0,
-            duration:0.5,
+            x: -100,
+            opacity: 0,
+            duration: 0.5,
         })
 
         contactTl.from(".contact .right", {
-            x:100,
-            opacity:0,
-            duration:0.5,
+            x: 100,
+            opacity: 0,
+            duration: 0.5,
         })
     })
 
