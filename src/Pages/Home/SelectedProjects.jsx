@@ -49,12 +49,22 @@ const SelectedProjects = () => {
                 </div>
                 <div className="bottom grid col md:grid-cols-2 gap-10 md:gap-5 mt-10">
                     <div className="projectCard1 flex flex-col gap-3 md:gap-5">
+                        <a href="https://computer-classes-vikash-fauzdar.vercel.app/" target="_blank" rel="noopener noreferrer" className='relative group transition-all duration-500'>
+                        <div className="h-20 w-20 hidden group-hover:flex transition-all duration-500 hover:bg-zinc-950 bg-zinc-200 backdrop-blur-xl rounded-full absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]  justify-center items-center text-black hover:text-white">
+                            <h1 className='text-xl font-primary'>Open</h1>
+                        </div>
                         <img src={project1} alt="project1" />
+                        </a>
                         <h2 className='text-3xl md:text-[3vw] lg:text-5xl font-primary'>Redesign project: Lakshya Computer Coaching </h2>
                         <p className='text-xl font-secondary md:text-2xl '>Elevating the user experience of a Computer coaching center based in Aligarh.</p>
                     </div>
                     <div className="projectCard2 flex flex-col gap-3 md:gap-5">
+                        <a href="https://inme.in/" target="_blank" rel="noopener noreferrer" className='relative group transition-all duration-500' >
+                        <div className="h-20 w-20 hidden group-hover:flex transition-all duration-500 hover:bg-zinc-950 bg-zinc-200 backdrop-blur-xl rounded-full absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]  justify-center items-center text-black hover:text-white">
+                            <h1 className='text-xl font-primary'>Open</h1>
+                        </div>
                         <img src={project2} alt="project2" />
+                        </a>
                         <h2 className='text-3xl font-primary lg:text-5xl md:text-[3vw] '>Internship project: Inme Summer Camp</h2>
                         <p className='text-xl font-secondary md:text-2xl'>Designing a website or a web application of a company which provide the camping or the touring services for the college or schools.</p>
                     </div>
