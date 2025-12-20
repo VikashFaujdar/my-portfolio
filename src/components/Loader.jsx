@@ -10,7 +10,7 @@ const Loader = () => {
   })
 
   return (
-    <div className={ShowLoader==false ? 'h-screen w-screen fixed bg-black hidden md:flex items-center justify-center z-50' : 'h-screen w-screen hidden items-center justify-center'}>
+    <div className={ShowLoader==false ? 'h-screen w-screen fixed bg-black hidden xl:flex items-center justify-center z-50' : 'h-screen w-screen hidden items-center justify-center'}>
         <img src={loaderImage} alt="loader" className='rounded-full'/>
     </div>
   )
