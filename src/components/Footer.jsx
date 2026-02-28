@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaWhatsapp } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
@@ -10,11 +9,11 @@ import resume from './../assets/Resume.pdf'
 
 const Footer = () => {
 
-
     useGSAP(() => {
         const SplittedLogo = SplitText.create(".nameLogo", {
             type: "chars",
         })
+        
         gsap.from(SplittedLogo.chars, {
             y: 20,
             opacity: 0,
@@ -24,14 +23,14 @@ const Footer = () => {
                 trigger:'.Footer',
             }
         })
-    })
+    }, )
 
     return (
         <div className='text-white py-10 Footer'>
             <div className="container px-3 lg:px-5">
                 <div className="footerTop md:flex justify-between items-center gap-10">
                     <div className="left w-full md:flex items-center justify-start gap-30">
-                        <div className="logo text-center">
+                        <div className="logo text-center">  
                             <h1 className='text-4xl nameLogo font-primary font-medium'>Vikash Kumar</h1>
                         </div>
                         <div className="links flex justify-between items-center md:gap-10 mt-5 md:mt-0">
@@ -41,7 +40,7 @@ const Footer = () => {
                             <Link to={'/about'} className='text-2xl md:text-[2vw] lg:text-xl hover:text-blue-300 transition-all duration-300 font-secondary font-medium' href='#Header'>About</Link>
                         </div>
                     </div>
-                    <hr className='my-5 border-2 md:hidden' />
+                    <hr className='my-5 border-1 md:hidden' />
                     <div className="right mt-3">
                         <div className="icons flex justify-evenly md:gap-8">
                             <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=nven6ac" target="_blank" rel="noopener noreferrer">
